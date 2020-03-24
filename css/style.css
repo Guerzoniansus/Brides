@@ -1,0 +1,30 @@
+.jumbotron {
+    background-color:pink !important; 
+    border-bottom: 2px solid black;
+}
+
+@media (max-width: 700px) {
+    .jumbotron h1 {
+        font-size: 2em;
+    }
+}
+#header-link {
+    text-decoration: none;
+}
+
+.jumbotron:hover {
+    background-color: #FFB6C1 !important; 
+}
+
+.bruiloft-parameters {
+    padding: 0px 5px 0px 5px;
+    font-weight: bold;
+}
+
+#item-owners {
+    font-size: 20px;
+}
+
+
+  
+  

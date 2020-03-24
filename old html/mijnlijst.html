@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mijn lijst - Happy Brides</title>
+
+        <!-- Import CSS -->
+
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+        <!-- Import Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        <!-- Import Font Awesome -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+        <!-- IMPORT JQUERY -->
+        <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+        <!-- HEADER -->
+
+        <a href="index.html" id="header-link" class="text-dark text-center">
+            <div class="jumbotron">
+                <h1 class="display-3">Happy Brides</h1>
+                <p>Makkelijk online wensenlijsten maken voor je bruiloft</p>
+            </div>
+        </a>
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                    <div class="col-sm-3 border-right text-center">
+
+
+                        <h1>Beschrijving</h1>
+                        <p>Van <strong class="bruiloft-parameters border" contenteditable="true">Alice Zuberg</strong> en 
+                            <strong class="bruiloft-parameters border" contenteditable="true">John Smith</strong></p>
+                        <p><i><strong>Datum:</strong> <span class="bruiloft-parameters border" contenteditable="true"> 28 September 2019</span></i></p>
+                        <img class="img-fluid w-75 rounded"
+                        src="https://i.pinimg.com/originals/c5/f8/1b/c5f81bd159937ecfbd5b0104e43f3960.png">
+                        <br/>
+                        <i>Upload een foto van jullie als bruidspaar</i>                       
+                        <input type="file" name="couple-photo" class="form-control-file mx-auto w-50"
+                        accept="image/*">
+                        <br/>
+                        <p class="w-75 mx-auto border bruiloft-parameters" contenteditable="true">John en ik kennen elkaar nu al 4 jaar. Eindelijk gaan we trouwen!! 
+                            Ik hoop heel erg dat iedereen kan komen. Voor vragen kan je een SMS sturen naar 06-34567890.
+                        </p>
+
+                    </div>
+
+                    <div class="col-sm-6 text-center">
+
+                        <h1>Uw wensenlijst</h1>
+                        <h3>Code: PX9L3P</h2>
+                        
+                            <div class="btn-group-vertical geschenken-buttons-owner w-75">
+                                <div class="btn-group geschenken-buttons-owner-row" id="cadeau1">
+                                    <button class="btn btn-lg btn-outline-primary" type="button">Servies</button>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success up-button" type="button">↑</button>
+                                        <button class="btn btn-success down-button" type="button">↓</button>
+                                        <button class="btn btn-danger delete-button" data-toggle="modal" type="button" data-target="#myModal">×</button>
+                                    </div>
+                                </div>
+                                <div class="btn-group geschenken-buttons-owner-row" id="cadeau2">
+                                    <button class="btn btn-lg btn-outline-primary" type="button">Koffer</button>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success up-button" type="button">↑</button>
+                                        <button class="btn btn-success down-button" type="button">↓</button>
+                                        <button class="btn btn-danger delete-button" data-toggle="modal" type="button" data-target="#myModal">×</button>
+                                    </div>
+                                </div>
+                                <div class="btn-group geschenken-buttons-owner-row" id="cadeau3">
+                                    <button class="btn btn-lg btn-outline-primary" type="button">Glazen</button>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success up-button" type="button">↑</button>
+                                        <button class="btn btn-success down-button" type="button">↓</button>
+                                        <button class="btn btn-danger delete-button" data-toggle="modal" type="button" data-target="#myModal">×</button>
+                                    </div>
+                                </div>
+                                <div class="btn-group geschenken-buttons-owner-row" id="cadeau4">
+                                    <button class="btn btn-lg btn-outline-primary" type="button">Keukenapparatuur</button>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success up-button" type="button">↑</button>
+                                        <button class="btn btn-success down-button" type="button">↓</button>
+                                        <button class="btn btn-danger delete-button" data-toggle="modal" type="button" data-target="#myModal">×</button>
+                                    </div>
+                                </div>
+                   
+                            </div>
+                                           
+                        <br/><br/>
+                        <input type="text" id="cadeau-naam" class="form-control w-25 mx-auto" placeholder="cadeau naam">
+                        <button class="btn btn-lg btn-success mt-2" type="button" id="nieuw-cadeau">Voeg nieuw cadeau toe</button>
+
+                        <!-- Modal -->
+                        <div id="myModal" class="modal" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Cadeau verwijderen</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Weet je zeker dat je dit cadeau wilt verwijderen?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" id="verwijder-cadeau-button" data-dismiss="modal">Ja, verwijder hem <i class="fa fa-trash"></i></button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Anuleer</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-sm-3 border-left">
+
+                        <h1>Hoe werkt het?</h1>
+                        <p><strong>Beschrijving</strong></p>
+                        <p>Bij de beschrijving kunt u de naam invullen van jullie als bruidspaar, de datum typen waarop de bruiloft is,
+                             een foto van jullie uploaden zodat gasten jullie meteen herknen, en een korte tekst schrijven.
+                             Een tip is om ieder geval een contactgegeven neer te zetten voor als iemand vragen heeft.
+                        </p>
+                        <p>Om de tekst aan te passen klik je er gewoon op!</p>
+                            
+                        <p><strong>Uw wensenlijst</strong></p>
+                        <p>In uw wensenlijst staat de lijst met cadeaus die uw wilt voor uw bruiloft. Gebruik de <span class="text-success">pijl knoppen</span> om ze
+                            op volgorde te zetten van hoog naar laag, met de cadeaus die u het graagst wilt bovenaan.
+                        </p>
+                        <p>Gebruik de <span class="text-danger">verwijder knop</span> om een cadeau te verwijderen.</p>
+                        <p>Vul onderin een naam in en klik op <span class="text-success">Voeg nieuw cadeau toe</span> om het cadeau toe te voegen.</p>
+                        <p>Als u klaar bent, kunt u uw code geven aan gasten zodat zij uw lijst kunnen zien.</p>
+                    </div>
+            </div>
+
+        </div>
+    
+    <!-- IMPORT JAVASCRIPT / JQUERY -->
+    <script type="text/javascript" src="../js/myjs.js"></script>
+</body>
+</html>

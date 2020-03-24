@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wensenlijst - Happy Brides</title>
+
+    <!-- Import CSS -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Import Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- IMPORT JQUERY -->
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+    <a href="old%20html/index.html" id="header-link" class="text-dark text-center">
+        <div class="jumbotron">
+            <h1 class="display-3">Happy Brides</h1>
+            <p>Makkelijk online wensenlijsten maken voor je bruiloft</p>
+        </div>
+    </a>
+
+    <div class="row">
+
+        <div class="col-sm-3 border-right text-center">
+            <h1>Bruiloft</h1>
+            <p>Van <strong>Alice Zuberg</strong> en <strong>John Smith</strong></p>
+            <p><i><strong>Datum:</strong> 28 September 2019</i></p>
+            <img class="img-fluid w-75 rounded"
+            src="https://i.pinimg.com/originals/c5/f8/1b/c5f81bd159937ecfbd5b0104e43f3960.png">
+            <br/>
+            <br/>
+            <p class="w-75 mx-auto">John en ik kennen elkaar nu al 4 jaar. Eindelijk gaan we trouwen!! Ik hoop heel erg dat iedereen
+                kan komen. Voor vragen kan je een SMS sturen naar 06-34567890.
+            </p>
+        </div>
+
+        <div class="col-sm-6 text-center">
+
+            <h1>Wensenlijst</h1>
+
+            <input type="text" class="form-control w-25 mx-auto mt-3" id="gast-naam" placeholder="Uw naam" required>
+            <p class="text-danger" id="naam-vergeten-tekst">U moet uw naam nog invullen!</p>
+
+            <div class="btn-group-vertical mt-5 mb-4" id="geschenken-buttons-gasten">
+                <button class="btn btn-lg btn-outline-primary" type="button">Servies</button>
+                <button class="btn btn-lg btn-outline-primary" type="button">Koffer</button>
+                <button class="btn btn-lg btn-outline-primary" type="button">Glazen</button>
+                <button class="btn btn-lg btn-outline-primary" type="button">Keukenapparatuur</button>
+                <button class="btn btn-lg btn-outline-primary" type="button">Schilderij</button>
+                <button class="btn btn-lg btn-outline-primary" type="button">Bol.com cadeaubon</button>
+                <button class="btn btn-lg btn-outline-primary" type="button">Naamboord voor bij de deur</button>
+            </div>
+            <br/>
+
+            <button class="btn btn-lg btn-success" id="bevestiging-knop">Bevestigen</button>
+            <p id="bevestiging-tekst">Keuze bevestigd!</p>
+
+        </div>
+
+        <div class="col-sm-3 border-left">
+
+            <h1>Hoe werkt het?</h1>
+            <p class="pr-3">Hier is een lijst met cadeaus die het bruidspaar graag wilt hebben. 
+                De cadeaus staan van boven naar beneden op volgorde van welke het bruidspaar het liefst wilt.
+                Klik op het cadeau (of de cadeaus)
+                die u wilt kopen. Vul bovenaan uw naam in. Alleen het echtpaar zal uw naam zien. 
+                <br/><br/>Als u klaar bent, drukt u op bevestigen.
+                Cadeaus die u gekozen heeft zullen niet meer zichtbaar zijn voor andere gasten.
+            </p>
+            <p class="text-danger">Na het bevestigen kunt u uw naam en de cadeaus niet meer veranderen.</p>
+
+        </div>
+
+    </div>
+
+    <!-- IMPORT JAVASCRIPT / JQUERY -->
+    <script type="text/javascript" src="js/myjs.js"></script>
+    
+</body>
+</html>
